@@ -1,6 +1,7 @@
+Sulgesin küpsiste nõusolekuteate.
 
 Otsisin 'Ott Saluvere' lehel https://www.google.com
-Lehe pealkiri: https://www.google.com/search?q=Ott+Saluvere&sca_esv=f1d9b15e6baa8be3&source=hp&ei=F_yWavXQCJuawPAP-buIyAI&iflsig=ABILxe8AAAAAapcKJ_Y0ZpMcAg7zAOkYcLV0Vn7ICmTQ&ved=0ahUKEwi1uODA5c2WAxUbDRAIHfkdAikQ4dUDCBw&uact=5&oq=Ott+Saluvere&gs_lp=Egdnd3Mtd2l6IgxPdHQgU2FsdXZlcmVIEVAAWA5wAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz&sei=KfyWasz_GuOQwPAP_drf2Qo
+Lehe pealkiri: https://www.google.com/search?q=Ott+Saluvere&sca_esv=f1d9b15e6baa8be3&source=hp&ei=fv2WasvRH6ipwPAPg82g8Qs&iflsig=ABILxe8AAAAAapcLjnFhlypriMgXzE1GnIVQ7_N4QKze&ved=0ahUKEwjLiI_s5s2WAxWoFBAIHYMmKL4Q4dUDCBw&uact=5&oq=Ott+Saluvere&gs_lp=Egdnd3Mtd2l6IgxPdHQgU2FsdXZlcmVIElAAWAxwAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz&sei=gv2WarvaO46nwPAPlr_ciAE
 Otsingutulemusi ei leitud.
 Google tuvastas roboti ja näitas CAPTCHA-t (vt juhendi lk 4).
 Salvestasin selle tõendiks: screenshots/google_captcha.png

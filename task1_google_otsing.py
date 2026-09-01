@@ -92,13 +92,28 @@ def otsi(draiver, url):
     print("Lehe pealkiri:", draiver.title)
 
 
+# Google'i küpsiseteate nuppude id-d ("Nõustu kõigiga" ja "Keeldu kõigist").
+KUPSISENUPUD = [
+    (By.ID, "L2AGLb"),
+    (By.ID, "W0wltc"),
+    (By.XPATH, "//button[contains(., 'Nõustu kõigiga')]"),
+    (By.XPATH, "//button[contains(., 'Accept all')]"),
+]
+
+
 def noustu_kupsistega(draiver):
-    """Klõpsab küpsiste nõusoleku nupul, kui see on lehel olemas."""
-    for tekst in ("Nõustun kõigiga", "Accept all", "Nõustu kõigiga"):
-        nupud = draiver.find_elements(By.XPATH, f"//button[.//div[text()='{tekst}']]")
-        if nupud:
-            nupud[0].click()
-            time.sleep(1)
+    """Sulgeb küpsiste nõusolekuteate, kui see otsingukasti ette jääb.
+
+    Ilma selleta jääb skript Google'i lehel "Enne Google'i avamist" akna taha kinni.
+    """
+    for asukoht in KUPSISENUPUD:
+        for nupp in draiver.find_elements(*asukoht):
+            if not nupp.is_displayed():
+                continue
+            # Tavaline klõps ei pruugi ülekattel mõjuda, seega klõpsame JavaScriptiga.
+            draiver.execute_script("arguments[0].click();", nupp)
+            print("Sulgesin küpsiste nõusolekuteate.")
+            time.sleep(2)
             return
 
 
