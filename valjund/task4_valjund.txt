@@ -1,0 +1,5 @@
+Sisestasin kasutajanime: tomsmith
+Lehe teade: You logged into a secure area!
+Praegune URL: https://the-internet.herokuapp.com/secure
+
+TEST ÕNNESTUS: leidsin oodatud teate 'You logged into a secure area!'
