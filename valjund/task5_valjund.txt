@@ -1,0 +1,8 @@
+Avasin avalehe: https://the-internet.herokuapp.com/
+Klõpsasin lingil 'Checkboxes', olen nüüd: https://the-internet.herokuapp.com/checkboxes
+Leidsin 2 märkeruutu
+  Märkeruut 1 sai linnukese
+  Märkeruut 2 oli juba märgitud
+Mõlemad kastid on nüüd märgitud.
+Läksin tagasi, olen nüüd: https://the-internet.herokuapp.com/
+Tagasi avalehel - ülesanne tehtud.
