@@ -1,0 +1,14 @@
+Vajutasin 'Add Element' 1. korda
+Vajutasin 'Add Element' 2. korda
+Vajutasin 'Add Element' 3. korda
+Vajutasin 'Add Element' 4. korda
+Vajutasin 'Add Element' 5. korda
+
+Lehel on nüüd 5 'Delete' nuppu
+Kustutasin ühe elemendi, alles on 4
+Kustutasin ühe elemendi, alles on 3
+Kustutasin ühe elemendi, alles on 2
+Kustutasin ühe elemendi, alles on 1
+Kustutasin ühe elemendi, alles on 0
+
+Kõik lisatud elemendid on kustutatud.
