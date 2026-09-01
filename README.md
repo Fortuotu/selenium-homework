@@ -75,6 +75,11 @@ faili `screenshots/minu_otsing.png` alati päris otsingutulemustega pilt. Kui Go
 mingil masinal siiski läbi laseb, salvestatakse `minu_otsing.png` kohe Google'i
 tulemustest ja DuckDuckGot ei kasutata.
 
+Kui käivitad skripti nähtava brauseriga (ilma `HEADLESS=1`), siis CAPTCHA korral
+skript **peatub ja ootab**: lahenda "I'm not a robot" brauseriaknas ära ja vajuta
+terminalis Enter. Seejärel salvestab skript kuvatõmmise Google'i päris tulemustest.
+Kui vajutad kohe Enter, minnakse edasi DuckDuckGole.
+
 Otsingumootori saab ka ise valida keskkonnamuutujaga `OTSINGUMOOTOR`:
 
 ```

@@ -14,6 +14,7 @@ Keskkonnamuutujaga saab otsingumootori ka ise valida:
 """
 
 import os
+import sys
 import time
 
 from selenium.webdriver.common.by import By
@@ -46,10 +47,18 @@ def main():
             return
 
         # Vaikimisi proovime Google'it, nagu ülesandes nõutud.
-        if otsi_ja_salvesta(draiver, GOOGLE) or valik == "google":
+        if otsi_ja_salvesta(draiver, GOOGLE):
             return
 
-        # Google blokeeris - salvestame selle tõendiks ja läheme DuckDuckGole.
+        # Google blokeeris. Kui brauser on nähtav, saab kasutaja CAPTCHA ise lahendada.
+        if oota_captcha_lahendamist(draiver):
+            return
+
+        if valik == "google":
+            print("Google ei andnud tulemusi ja varulahendus on välja lülitatud.")
+            return
+
+        # Salvestame CAPTCHA tõendiks ja läheme DuckDuckGole.
         draiver.save_screenshot(CAPTCHA_KUVATOMMIS)
         print(
             "Google tuvastas roboti ja näitas CAPTCHA-t (vt juhendi lk 4).\n"
@@ -64,7 +73,11 @@ def main():
 def otsi_ja_salvesta(draiver, url):
     """Teeb otsingu ja salvestab kuvatõmmise. Tagastab True, kui tulemusi oli."""
     otsi(draiver, url)
+    return salvesta_tulemused(draiver, url)
 
+
+def salvesta_tulemused(draiver, url):
+    """Salvestab kuvatõmmise, kui lehel on päris otsingutulemused."""
     tulemused = draiver.find_elements(*TULEMUSTE_VALIJA[url])
     if not tulemused:
         print("Otsingutulemusi ei leitud.")
@@ -74,6 +87,25 @@ def otsi_ja_salvesta(draiver, url):
     print(f"Leidsin {len(tulemused)} tulemust")
     print("Kuvatõmmis salvestatud:", KUVATOMMIS)
     return True
+
+
+def oota_captcha_lahendamist(draiver):
+    """Ootab, kuni kasutaja CAPTCHA ise ära lahendab, ja kontrollib siis tulemusi.
+
+    Töötab ainult nähtava brauseriga käsurealt (HEADLESS=1 korral pole midagi
+    lahendada). Tagastab True, kui pärast lahendamist olid tulemused olemas.
+    """
+    if os.environ.get("HEADLESS") == "1" or not sys.stdin.isatty():
+        return False
+
+    print(
+        "\nGoogle näitab CAPTCHA-t 'I'm not a robot'.\n"
+        "Lahenda see brauseriaknas ja vajuta siis siin Enter, et skript jätkaks\n"
+        "(või vajuta lihtsalt Enter, et minna edasi DuckDuckGole)."
+    )
+    input()
+
+    return salvesta_tulemused(draiver, GOOGLE)
 
 
 def otsi(draiver, url):
