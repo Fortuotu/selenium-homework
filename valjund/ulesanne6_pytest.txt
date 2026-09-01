@@ -1,0 +1,13 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /nix/store/af4mmdl2y86mnkx8mg7zj5sxbdwxvdq9-python3-3.14.7-env/bin/python3.14
+cachedir: .pytest_cache
+rootdir: /home/ott/Documents/selenium-homework
+collecting ... collected 5 items
+
+test_ulesanne6.py::test_dropdown_valik PASSED                            [ 20%]
+test_ulesanne6.py::test_dunaamiline_element PASSED                       [ 40%]
+test_ulesanne6.py::test_sisselogimise_voog PASSED                        [ 60%]
+test_ulesanne6.py::test_tabelist_andmete_leidmine PASSED                 [ 80%]
+test_ulesanne6.py::test_sildi_jargi_filtreerimine PASSED                 [100%]
+
+============================== 5 passed in 44.43s ==============================
