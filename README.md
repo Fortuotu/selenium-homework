@@ -75,6 +75,13 @@ faili `screenshots/minu_otsing.png` alati päris otsingutulemustega pilt. Kui Go
 mingil masinal siiski läbi laseb, salvestatakse `minu_otsing.png` kohe Google'i
 tulemustest ja DuckDuckGot ei kasutata.
 
+Otsingumootori saab ka ise valida keskkonnamuutujaga `OTSINGUMOOTOR`:
+
+```
+OTSINGUMOOTOR=duckduckgo py task1_google_otsing.py   # jäta Google'i katse vahele
+OTSINGUMOOTOR=google py task1_google_otsing.py       # ainult Google, ilma varulahenduseta
+```
+
 ## Ülesande 6 testid
 
 | Test | Eesmärk | Kasutatud leidmismeetodid |

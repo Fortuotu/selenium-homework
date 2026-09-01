@@ -1,11 +1,12 @@
 
 Otsisin 'Ott Saluvere' lehel https://www.google.com
-Lehe pealkiri: https://www.google.com/search?q=Ott+Saluvere&sca_esv=f1d9b15e6baa8be3&sxsrf=APpeQnuvlP0HzgRrY_PVwAGnAcJGPyUbiA%3A1788278692728&source=hp&ei=pPeWavyaK7bWwPAPsYa8-Aw&iflsig=ABILxe8AAAAAapcFtPzPf57Wwg4BJjryrqJE0UKXTp2d&ved=0ahUKEwj8_POh4c2WAxU2KxAIHTEDD88Q4dUDCBw&uact=5&oq=Ott+Saluvere&gs_lp=Egdnd3Mtd2l6IgxPdHQgU2FsdXZlcmVIEFAAWA1wAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz&sei=sveWari5COWywPAPhOW3mAc
+Lehe pealkiri: https://www.google.com/search?q=Ott+Saluvere&sca_esv=f1d9b15e6baa8be3&source=hp&ei=F_yWavXQCJuawPAP-buIyAI&iflsig=ABILxe8AAAAAapcKJ_Y0ZpMcAg7zAOkYcLV0Vn7ICmTQ&ved=0ahUKEwi1uODA5c2WAxUbDRAIHfkdAikQ4dUDCBw&uact=5&oq=Ott+Saluvere&gs_lp=Egdnd3Mtd2l6IgxPdHQgU2FsdXZlcmVIEVAAWA5wAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz&sei=KfyWasz_GuOQwPAP_drf2Qo
+Otsingutulemusi ei leitud.
 Google tuvastas roboti ja näitas CAPTCHA-t (vt juhendi lk 4).
 Salvestasin selle tõendiks: screenshots/google_captcha.png
 Teen sama otsingu DuckDuckGos, mis on juhendis pakutud leebem variant.
 
 Otsisin 'Ott Saluvere' lehel https://duckduckgo.com
 Lehe pealkiri: Ott Saluvere at DuckDuckGo
-DuckDuckGo leidis 10 tulemust
-Otsingutulemused salvestatud: screenshots/minu_otsing.png
+Leidsin 10 tulemust
+Kuvatõmmis salvestatud: screenshots/minu_otsing.png
